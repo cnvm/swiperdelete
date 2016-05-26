@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+		<!--禁止把数字转化为拨号链接,禁止把文字默认为邮箱地址-->
+		<meta name="format-detection" content="telephone=no,email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>购物车</title>
+		<link rel="stylesheet" href="style/reset.css">
+		<link rel="stylesheet" href="style/wstyle.css">
+		<style>
+			.list-ul{ overflow: hidden}
+			.list-li{ position:relative;}
+			.mc-btn-del{ position: absolute; top: 0; right: -50px;z-index:999;text-align: center; background: #eb4f38; color: #fff; width: 50px;height:84px;line-height:84px;}
+			.wait-pay-list li{overflow: initial;}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+
+			<div class="content wait-content cart-content">
+				<!--商品列表-->
+				<div class="wait-pay-list">
+					<ul class="list-ul" id="mc-list">
+						<li class="list-li">
+							<input type="checkbox" id="item1" />
+							<i class="item-icon"></i>
+							<div class="blue"></div>
+							<label for="item1"></label>
+							<img class="item-img" src="images/pro02.png" />
+							<div class="item-infro fl">
+								<p>多美滋(Dumex)致粹幼儿 Copy</p>
+								<P>3段(12-36个月幼儿适用)</P>
+								<p>净含量：400克</p>
+							</div>
+							<div class="item-num fr">
+								<p class="item-price">&yen;<span>98.00</span></p>
+								<div class="control">
+									<span>&minus;</span>
+									<span>2</span>
+									<span>+</span>
+								</div>
+							</div>
+							<div class="mc-btn-del">删除</div>
+						</li>
+						<li class="list-li">
+							<input type="checkbox" id="item1" />
+							<i class="item-icon"></i>
+							<div class="blue"></div>
+							<label for="item1"></label>
+							<img class="item-img" src="images/pro02.png" />
+							<div class="item-infro fl">
+								<p>多美滋(Dumex)致粹幼儿 Copy</p>
+								<P>3段(12-36个月幼儿适用)</P>
+								<p>净含量：400克</p>
+							</div>
+							<div class="item-num fr">
+								<p class="item-price">&yen;<span>98.00</span></p>
+								<div class="control">
+									<span>&minus;</span>
+									<span>2</span>
+									<span>+</span>
+								</div>
+							</div>
+							<div class="mc-btn-del">删除</div>
+						</li>
+						<li class="list-li">
+							<input type="checkbox" id="item1" />
+							<i class="item-icon"></i>
+							<div class="blue"></div>
+							<label for="item1"></label>
+							<img class="item-img" src="images/pro02.png" />
+							<div class="item-infro fl">
+								<p>多美滋(Dumex)致粹幼儿 Copy</p>
+								<P>3段(12-36个月幼儿适用)</P>
+								<p>净含量：400克</p>
+							</div>
+							<div class="item-num fr">
+								<p class="item-price">&yen;<span>98.00</span></p>
+								<div class="control">
+									<span>&minus;</span>
+									<span>2</span>
+									<span>+</span>
+								</div>
+							</div>
+							<div class="mc-btn-del">删除</div>
+						</li>
+						<li class="list-li">
+							<input type="checkbox" id="item1" />
+							<i class="item-icon"></i>
+							<div class="blue"></div>
+							<label for="item1"></label>
+							<img class="item-img" src="images/pro02.png" />
+							<div class="item-infro fl">
+								<p>多美滋(Dumex)致粹幼儿 Copy</p>
+								<P>3段(12-36个月幼儿适用)</P>
+								<p>净含量：400克</p>
+							</div>
+							<div class="item-num fr">
+								<p class="item-price">&yen;<span>98.00</span></p>
+								<div class="control">
+									<span>&minus;</span>
+									<span>2</span>
+									<span>+</span>
+								</div>
+							</div>
+							<div class="mc-btn-del">删除</div>
+						</li>
+						<li class="list-li">
+							<input type="checkbox" id="item1" />
+							<i class="item-icon"></i>
+							<div class="blue"></div>
+							<label for="item1"></label>
+							<img class="item-img" src="images/pro02.png" />
+							<div class="item-infro fl">
+								<p>多美滋(Dumex)致粹幼儿 Copy</p>
+								<P>3段(12-36个月幼儿适用)</P>
+								<p>净含量：400克</p>
+							</div>
+							<div class="item-num fr">
+								<p class="item-price">&yen;<span>98.00</span></p>
+								<div class="control">
+									<span>&minus;</span>
+									<span>2</span>
+									<span>+</span>
+								</div>
+							</div>
+							<div class="mc-btn-del">删除</div>
+						</li>
+						<li class="list-li">
+							<input type="checkbox" id="item1" />
+							<i class="item-icon"></i>
+							<div class="blue"></div>
+							<label for="item1"></label>
+							<img class="item-img" src="images/pro02.png" />
+							<div class="item-infro fl">
+								<p>多美滋(Dumex)致粹幼儿 Copy</p>
+								<P>3段(12-36个月幼儿适用)</P>
+								<p>净含量：400克</p>
+							</div>
+							<div class="item-num fr">
+								<p class="item-price">&yen;<span>98.00</span></p>
+								<div class="control">
+									<span>&minus;</span>
+									<span>2</span>
+									<span>+</span>
+								</div>
+							</div>
+							<div class="mc-btn-del">删除</div>
+						</li>
+						<li class="list-li">
+							<input type="checkbox" id="item1" />
+							<i class="item-icon"></i>
+							<div class="blue"></div>
+							<label for="item1"></label>
+							<img class="item-img" src="images/pro02.png" />
+							<div class="item-infro fl">
+								<p>多美滋(Dumex)致粹幼儿 Copy</p>
+								<P>3段(12-36个月幼儿适用)</P>
+								<p>净含量：400克</p>
+							</div>
+							<div class="item-num fr">
+								<p class="item-price">&yen;<span>98.00</span></p>
+								<div class="control">
+									<span>&minus;</span>
+									<span>2</span>
+									<span>+</span>
+								</div>
+							</div>
+							<div class="mc-btn-del">删除</div>
+						</li>
+						<li class="list-li">
+							<input type="checkbox" id="item1" />
+							<i class="item-icon"></i>
+							<div class="blue"></div>
+							<label for="item1"></label>
+							<img class="item-img" src="images/pro02.png" />
+							<div class="item-infro fl">
+								<p>多美滋(Dumex)致粹幼儿 Copy</p>
+								<P>3段(12-36个月幼儿适用)</P>
+								<p>净含量：400克</p>
+							</div>
+							<div class="item-num fr">
+								<p class="item-price">&yen;<span>98.00</span></p>
+								<div class="control">
+									<span>&minus;</span>
+									<span>2</span>
+									<span>+</span>
+								</div>
+							</div>
+							<div class="mc-btn-del">删除</div>
+						</li>
+						<li class="list-li">
+							<input type="checkbox" id="item1" />
+							<i class="item-icon"></i>
+							<div class="blue"></div>
+							<label for="item1"></label>
+							<img class="item-img" src="images/pro02.png" />
+							<div class="item-infro fl">
+								<p>多美滋(Dumex)致粹幼儿 Copy</p>
+								<P>3段(12-36个月幼儿适用)</P>
+								<p>净含量：400克</p>
+							</div>
+							<div class="item-num fr">
+								<p class="item-price">&yen;<span>98.00</span></p>
+								<div class="control">
+									<span>&minus;</span>
+									<span>2</span>
+									<span>+</span>
+								</div>
+							</div>
+							<div class="mc-btn-del">删除</div>
+						</li>
+						<li class="list-li">
+							<input type="checkbox" id="item1" />
+							<i class="item-icon"></i>
+							<div class="blue"></div>
+							<label for="item1"></label>
+							<img class="item-img" src="images/pro02.png" />
+							<div class="item-infro fl">
+								<p>多美滋(Dumex)致粹幼儿 Copy</p>
+								<P>3段(12-36个月幼儿适用)</P>
+								<p>净含量：400克</p>
+							</div>
+							<div class="item-num fr">
+								<p class="item-price">&yen;<span>98.00</span></p>
+								<div class="control">
+									<span>&minus;</span>
+									<span>2</span>
+									<span>+</span>
+								</div>
+							</div>
+							<div class="mc-btn-del">删除</div>
+						</li>
+						<li class="list-li">
+							<input type="checkbox" id="item1" />
+							<i class="item-icon"></i>
+							<div class="blue"></div>
+							<label for="item1"></label>
+							<img class="item-img" src="images/pro02.png" />
+							<div class="item-infro fl">
+								<p>多美滋(Dumex)致粹幼儿 Copy</p>
+								<P>3段(12-36个月幼儿适用)</P>
+								<p>净含量：400克</p>
+							</div>
+							<div class="item-num fr">
+								<p class="item-price">&yen;<span>98.00</span></p>
+								<div class="control">
+									<span>&minus;</span>
+									<span>2</span>
+									<span>+</span>
+								</div>
+							</div>
+							<div class="mc-btn-del">删除</div>
+						</li>
+						<li class="list-li">
+							<input type="checkbox" id="item1" />
+							<i class="item-icon"></i>
+							<div class="blue"></div>
+							<label for="item1"></label>
+							<img class="item-img" src="images/pro02.png" />
+							<div class="item-infro fl">
+								<p>多美滋(Dumex)致粹幼儿 Copy</p>
+								<P>3段(12-36个月幼儿适用)</P>
+								<p>净含量：400克</p>
+							</div>
+							<div class="item-num fr">
+								<p class="item-price">&yen;<span>98.00</span></p>
+								<div class="control">
+									<span>&minus;</span>
+									<span>2</span>
+									<span>+</span>
+								</div>
+							</div>
+							<div class="mc-btn-del">删除</div>
+						</li>
+						<li class="list-li">
+							<input type="checkbox" id="item1" />
+							<i class="item-icon"></i>
+							<div class="blue"></div>
+							<label for="item1"></label>
+							<img class="item-img" src="images/pro02.png" />
+							<div class="item-infro fl">
+								<p>多美滋(Dumex)致粹幼儿 Copy</p>
+								<P>3段(12-36个月幼儿适用)</P>
+								<p>净含量：400克</p>
+							</div>
+							<div class="item-num fr">
+								<p class="item-price">&yen;<span>98.00</span></p>
+								<div class="control">
+									<span>&minus;</span>
+									<span>2</span>
+									<span>+</span>
+								</div>
+							</div>
+							<div class="mc-btn-del">删除</div>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="toolbar">
+				<div class="toolbar-left fl">
+					<label for="cart-input" class="fl"></label>
+					<input id="cart-input" type="checkbox" /><i class="input-icon fl"></i>
+					<p>合计：<span id="li">&yen;294.00</span>不含运费</p>
+				</div>
+				<a class="toolbar-right fr">结算(5)</a>
+			</div>
+		</div>
+		<script type="text/javascript" src="javascript/jquery-2.1.3.min.js"></script>
+		<script src="javascript/fastclick.js"></script>
+		<script src="javascript/niceClick.js"></script>
+		<script src="javascript/swiperDel.js"></script>
+		<script>
+			var swiperDel = new swiperDel;
+			var domiD = $("#mc-list")
+			var swiperLeft = "translateX(-50px)"; //往左移动50PX
+			var swiperTime = "all 0.3s"			//右移动-左移动 消耗的time
+			swiperDel.swiperDelete(domiD,swiperLeft,swiperTime); // id , 往左移,时间.
+		</script>
+	</body>
+
+</html>

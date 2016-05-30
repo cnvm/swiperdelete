@@ -2,7 +2,7 @@
 var swiperDel = (function(){
     var swiperDel = function(){
         this.swiperDelete = function(domId,left,time){
-            var xx,yy,XX,YY,swipeX,swipeY, k= 0;
+            var xx,yy,XX,YY,swipeX,swipeY,dataSatus = null,liThis = null;
             domId.on("touchstart",function(e){
                 xx  = e.originalEvent.targetTouches[0].screenX;
                 yy  = e.originalEvent.targetTouches[0].screenY;
@@ -19,11 +19,21 @@ var swiperDel = (function(){
                     swipeY = false ;
                     if(Math.round(xx) < Math.round(XX)){ //左滑动
                         if( openRight == true){
-                            $(this).css({"transform":"translateX(0px)","transition":time});
-                            openRight =false;
+                            dataSatus =  $(this).attr("data-open");
+                            if(dataSatus == "true"){
+                                $(this).css({"transform":"translateX(0px)","transition":time});
+                                $(this).attr("data-open","flase");
+                                openRight =false;
+                                console.log(dataSatus);
+                            }else if(dataSatus == undefined || dataSatus == "flase"){
+                                liThis = $(this);
+                                $(this).css({"transform":"translateX(50px)","transition":"all 0.1s"});
+                            };
                         };
                     }else if(Math.round(xx) > Math.round(XX)){//右滑动
                         if( openLeft  ==  true){
+                            //$(this).attr("data-open","true");
+                            dataSatus =  $(this).attr("data-open","true");
                             $(this).css({"transform":left,"transition":time});
                             openLeft  = false;
                         };
@@ -34,6 +44,12 @@ var swiperDel = (function(){
                 };
             });
             domId.children("li").on("touchend",function(){   //开关
+                if( openLeft  ==  true){
+                    if(dataSatus == undefined || dataSatus == "flase"){
+                        liThis.css({"transform":"translateX(0px)","transition":"all 0.6s"});
+                    }
+                    openLeft  = false;
+                }
                 openRight = true;
                 openLeft = true;
             });
